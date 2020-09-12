@@ -90,3 +90,29 @@ def done(update, context):
                               "{}"
                               "Until next time!".format(facts_to_str(context.user_data)))
     return ConversationHandler.END
+
+def get_example_conversation_handler():
+    # Add conversation handler with the states CHOOSING, TYPING_CHOICE and TYPING_REPLY
+    return ConversationHandler(
+        entry_points=[CommandHandler('start', start)],
+
+        states={
+            CHOOSING: [MessageHandler(Filters.regex('^(Age|Favourite colour|Number of siblings)$'),
+                                      regular_choice),
+                       MessageHandler(Filters.regex('^Something else...$'),
+                                      custom_choice),
+                       ],
+
+            TYPING_CHOICE: [
+                MessageHandler(Filters.text & ~(Filters.command | Filters.regex('^Done$')),
+                               regular_choice)],
+
+            TYPING_REPLY: [
+                MessageHandler(Filters.text & ~(Filters.command | Filters.regex('^Done$')),
+                               received_information)],
+        },
+
+        fallbacks=[MessageHandler(Filters.regex('^Done$'), done)],
+        name="my_conversation",
+        persistent=True
+    )
