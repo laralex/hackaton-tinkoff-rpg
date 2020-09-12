@@ -1,0 +1,112 @@
+{
+    "equipment": {
+        "hats": [
+            {
+                "item_id": 1,
+                "name": "Ковбойская Шляпа",
+                "personality_buffs": [
+                    {"partygoer": 3}
+                ],
+                "img": "https://cdn.historicalemporium.com/store/media/007622/007622_01.jpg"
+            },
+            {
+                "item_id": 2,
+                "name": "Каска исследователя",
+                "general_buff": "Любые траты повышают уровни Личности, вне зависимости от выбранных Личностей вашего персонажа",
+                "requires": [
+                    {"lord": 30}
+                ],
+                "img": "http://rait24.ru/images/virtuemart/product/%D0%9A%D0%90%D0%A1%D0%9A%D0%90%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%BD%D0%B0%D1%8F%20%D0%A8%D0%90%D0%A5%D0%A2%D0%81%D0%A0%D0%A1%D0%9A%D0%90%D0%AF.jpg"
+            }
+        ],
+        "costumes": [
+            {
+                "item_id": 3,
+                "name": "Кимоно каратиста",
+                "personality_buffs": [
+                    {"bodybuilder": 5}
+                ],
+                "img": "https://user40717.clients-cdnnow.ru/shop/wp-content/uploads/2017/12/beloe-plotnoe-trenirovochnoe-kimono-grin-hill.jpg"
+            },
+            {
+                "item_id": 4,
+                "name": "Костюм удачи",
+                "general_buff": "Выполнение заданий дает шанс 15% на получение дополнительных игровых предметов",
+                "requires": [
+                    {"aristocrat": 25}
+                ],
+                "img": "http://wedding.ua/images_user/A-foto-for-zags/weddingman.jpg"
+            }
+        ],
+        "boots": [
+            {
+                "item_id": 5,
+                "name": "Сапоги садовника",
+                "personality_buffs": [
+                    {"naturalist": 10}
+                ],
+                "img": "https://d.allegroimg.com/original/0667c9/861b93454cb59236f83873a9395d/Demar-Grand-Kalosze-Gumowce-do-Ogrodu-Grzyby-45"
+            },
+            {
+                "item_id": 6,
+                "name": "Бутсы накопления миль",
+                "general_buff": "Любые покупки накапливают мили в ABCD авиалиниях",
+                "requires": [
+                    {"traveler": 20}
+                ],
+                "img":"https://image.shutterstock.com/image-vector/sport-shoe-wings-vector-symbol-600w-375900409.jpg"
+            }
+        ],
+        "rings":[
+            {
+                "item_id": 7,
+                "name": "Кольцо мудрости",
+                "personality_buffs": [
+                    {"mentor": 15}
+                ],
+                "img":"https://mecalmen.com/wp-content/uploads/2020/03/DSC0074ppp.jpg"
+            },
+            {
+                "item_id": 8,
+                "name": "Кольцо банкира",
+                "general_buff": "Вклады и инвестиции в экосистеме Тинькофф увеличивают все Личности одновременно",
+                "requires": [
+                    {"businessman": 30}
+                ],
+                "img":"https://myuvelir.com.ua/image/catalog/images/blog/2017/111/bitkoint/bitcoin-ring-3d-model-stl-3dm.jpg"
+            }
+        ]
+    },
+    "consumables": [
+        {
+            "item_id": 9,
+            "name": "Билет в Тинькофф",
+            "description": "Приглашение на экскурсию по офису Тинькофф",
+            "img":"https://e-z-o.com/assets/img/tickets/ticket.jpg"
+        },
+        {
+            "item_id": 10,
+            "name": "Жетон кешбека",
+            "description": "Используйте для получения 0.1% кешбека в категории Еда на 1 день (при использовании нескольких одновременно, процент суммируется на 1 день)",
+            "img": "https://previews.123rf.com/images/tihiychelovek/tihiychelovek1508/tihiychelovek150800016/43961873-1-gold-coin-standing-with-a-percent-sign.jpg"
+        },
+        {
+            "item_id": 11,
+            "name": "Жетон бесплатных СМС на 1 день",
+            "description": "Используйте для получения бесплатных СМС о состоянии счета на 1 день. Вы будете получать бесплатные СМС столько дней сколько использовали жетонов",
+            "img": "https://53news.ru/images/wsscontent/articles/2018/03/novgorodtsy-poluchat-sms-ot-pensionnogo-fonda.jpg"
+        },
+        {
+            "item_id": 12,
+            "name": "Машина времени овердрафта",
+            "description": "Используйте и проценты за овердрафт по кредитной карте не будут применены на 1 день дольше",
+            "img": "https://media.istockphoto.com/photos/spiral-clock-picture-id1134734488?k=6&m=1134734488&s=612x612&w=0&h=dIFk_9v0NHmQYbZ9gVOh9bC0_K81asyIosOBXLVNZeQ="
+        },
+        {
+            "item_id": 13,
+            "name": "Зелье аристократизма",
+            "description": "Используйте и получите трехкратное ускорение развития личности Аристократ (категории Рестораны, Роскошь) на 1 неделю",
+            "img": "https://i.pinimg.com/originals/97/34/c9/9734c90ce589906bd0fefe597ff42e5c.jpg"
+        }
+    ]
+}
