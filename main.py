@@ -1,4 +1,4 @@
-from time import time
+
 from datetime import timedelta
 from telegram import (KeyboardButton, ReplyKeyboardMarkup, ChatAction)
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,
@@ -38,8 +38,15 @@ def main():
 
     dp.add_handler(get_example_conversation_handler())
 
+    inventory.load_items_database()
+
+    dp.add_handler(inventory.get_inventory_conversation())
+
     show_data_handler = CommandHandler('show_data', show_data)
     dp.add_handler(show_data_handler)
+
+    
+    print("Loaded items")
 
     # Start the Bot
     updater.start_polling()

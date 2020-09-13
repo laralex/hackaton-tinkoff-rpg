@@ -1,6 +1,6 @@
 # Extract / Save persistent data
 import pickle
-
+from time import time
 from telegram.ext import Updater, Job
 
 JOBS_PICKLE = 'job_tuples.pickle'
